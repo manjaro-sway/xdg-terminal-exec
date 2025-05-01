@@ -1,6 +1,6 @@
 # Maintainer: Max Gautier <mg@max.gautier.name>
 pkgname=xdg-terminal-exec
-pkgver=0.12.0
+pkgver=0.12.3
 pkgrel=1
 pkgdesc="Proposed standard to launching desktop apps with Terminal=true"
 arch=(any)
@@ -9,8 +9,8 @@ makedepends=('scdoc')
 checkdepends=('bats')
 license=('GPL-3.0-or-later')
 source=("${pkgname}-${pkgver}::$url/-/archive/v${pkgver}/${pkgname}-v${pkgver}.tar.gz")
-b2sums=('0b05070dd8e169d8b19a1f041cc8df69008a8f246c743e41092cc876bd8561b18cc1463cf5a75de3b61020536251a92567b872ba7b3457bf8a5fa2cc65306346')
-sha256sums=('71abcfc50b1f408348097a29531b3621e50cc34de637bc73f14ef45f5021ae55')
+sha256sums=('36e83306e012a17d98490ab8de468b3dcbab34f619cd85937ff2babc684f9bc0')
+b2sums=('86c67ab8e7c63400d32d4526f907be22ab981d1ecfdfcdac3f15116ec4ef1b21da811a00205f4ee0941bf239a20c7c96e5d7dc17c327be4e3a89c71c001f4254')
 
 check() {
     cd "$pkgname-v$pkgver"
@@ -22,7 +22,5 @@ build() {
 }
 
 package() {
-    cd "$pkgname-v$pkgver"
-    install -Dm 755 -t "$pkgdir"/usr/bin "$pkgname"
-    install -Dm 644 -t "$pkgdir"/usr/share/man/man1/ ${pkgname}.1.gz
+    make -C "$pkgname-v$pkgver" prefix="$pkgdir/usr" install
 }
