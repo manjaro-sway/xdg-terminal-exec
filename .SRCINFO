@@ -1,14 +1,14 @@
 pkgbase = xdg-terminal-exec
 	pkgdesc = Proposed standard to launching desktop apps with Terminal=true
-	pkgver = 0.12.3
+	pkgver = 0.12.4
 	pkgrel = 1
 	url = https://gitlab.freedesktop.org/Vladimir-csp/xdg-terminal-exec
 	arch = any
 	license = GPL-3.0-or-later
 	checkdepends = bats
 	makedepends = scdoc
-	source = xdg-terminal-exec-0.12.3::https://gitlab.freedesktop.org/Vladimir-csp/xdg-terminal-exec/-/archive/v0.12.3/xdg-terminal-exec-v0.12.3.tar.gz
-	sha256sums = 36e83306e012a17d98490ab8de468b3dcbab34f619cd85937ff2babc684f9bc0
-	b2sums = 86c67ab8e7c63400d32d4526f907be22ab981d1ecfdfcdac3f15116ec4ef1b21da811a00205f4ee0941bf239a20c7c96e5d7dc17c327be4e3a89c71c001f4254
+	source = xdg-terminal-exec-0.12.4::https://gitlab.freedesktop.org/Vladimir-csp/xdg-terminal-exec/-/archive/v0.12.4/xdg-terminal-exec-v0.12.4.tar.gz
+	sha256sums = 525c241267a3b2a5f94199216df7e68938c49654f59edb3e54a94207f379658c
+	b2sums = 2a0e43b93113982880ac85faf9daeaeaa803d822cbe70d6f70fa5d646c07dca79a03074292c854c88acd507bb6803bc554756858bca983c26cca9aa5eeea6fd6
 
 pkgname = xdg-terminal-exec
