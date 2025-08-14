@@ -1,0 +1,4 @@
+_extends: manjaro-contrib/.github
+repository:
+  homepage: https://aur.archlinux.org/xdg-terminal-exec.git
+  topics: arch, package, any
